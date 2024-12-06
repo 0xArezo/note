@@ -1,7 +1,7 @@
 <?php
 $filename = 'notes.txt'; // فایل ذخیره‌سازی
 
-//read note
+//read note from file
 if (file_exists($filename)) {
     $file = fopen($filename, 'r');
     $content = fread($file, filesize($filename));
