@@ -11,7 +11,7 @@ if (file_exists($filename)) {
     $notes = [];
 }
 
-// اضافه کردن یادداشت جدید
+// add new note
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['note'])) {
     $note = trim($_POST['note']);
     if ($note !== '') {
