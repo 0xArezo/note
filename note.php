@@ -31,7 +31,7 @@ if (isset($_GET['delete'])) {
     $index = intval($_GET['delete']);
     if (isset($notes[$index])) {
         unset($notes[$index]);
-        $file = fopen($filename, 'w'); // بازنویسی فایل
+        $file = fopen($filename, 'w'); //  بازنویسی فایل بخش1
         fwrite($file, implode("\n===\n", $notes)); // دوباره ذخیره کردن یادداشت‌ها بدون خط اضافی
         fclose($file);
         header("Location: index.php");
