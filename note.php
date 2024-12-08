@@ -11,7 +11,7 @@ if (file_exists($filename)) {
     $notes = [];
 }
 
-// add new note
+// add new note part2
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['note'])) {
     $note = trim($_POST['note']);
     if ($note !== '') {
