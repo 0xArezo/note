@@ -8,7 +8,7 @@ if (file_exists($filename)) {
     fclose($file);
     $notes = explode("===\n", trim($content)); // جدا کردن یادداشت‌ها
 } else {
-    $notes = [];
+    $notes = array();
 }
 
 // add new note part2
