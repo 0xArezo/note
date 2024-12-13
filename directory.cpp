@@ -10,7 +10,7 @@ void print_directory_tree(const fs::path& path, const std::string& prefix = "") 
         std::cout << prefix << "[DIR] " << path.filename().string() << std::endl;
 
         for (const auto& entry : fs::directory_iterator(path)) {
-            // اگر مسیر یک دایرکتوری باشد، به صورت بازگشتی فراخوانی می‌شود
+            // اگر مسیر یک دایرکتوری باشد، به صورت برگشتی فراخوانی می‌شود
             if (fs::is_directory(entry)) {
                 print_directory_tree(entry.path(), prefix + "  ");
             } else {
