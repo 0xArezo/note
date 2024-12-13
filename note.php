@@ -1,12 +1,12 @@
 <?php
-$filename = 'notes.txt'; // فایل سیوینگ
+$filename = 'notes.txt'; // فایل سیو
 
 //read note from file
 if (file_exists($filename)) {
     $file = fopen($filename, 'r');
     $content = fread($file, filesize($filename));
     fclose($file);
-    $notes = explode("===\n", trim($content)); // جدا کردن یادداشت‌ها
+    $notes = explode("===\n", trim($content)); // جدا کردن یادداشت ها
 } else {
     $notes = array();
 }
