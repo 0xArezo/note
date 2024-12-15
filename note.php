@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['note'])) {
             fwrite($file, "\n===\n"); //add seperator
         }
         fclose($file);
-        header("Location: index.php"); // بازنشانی صفحه
+        header("Location: index.php"); // برگشت صفحه
         exit();
     }
 }
