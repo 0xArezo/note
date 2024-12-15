@@ -24,7 +24,7 @@ void print_directory_tree(const fs::path& path, const std::string& prefix = "") 
 }
 
 int main() {
-    // مسیر ریشه برای شروع (می‌توانید آن را تغییر دهید)
+    // مسیر روت برای شروع (می‌توانید آن را تغییر دهید)
     std::string root_path = "/"; // در لینوکس / و در ویندوز C:\\
     
     // نمایش درخت دایرکتوری
