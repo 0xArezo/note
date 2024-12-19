@@ -1,7 +1,7 @@
 #include <iostream>
 #include <filesystem>
 
-namespace fs = std::filesystem;
+namespace fis = std::filesystem;
 
 // 25 برگشتی برای نمایش دایرکتوری‌ها به صورت درختی زیبا
 void print_directory_tree(const fs::path& path, const std::string& prefix = "") {
