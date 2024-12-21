@@ -1,5 +1,5 @@
 <?php
-$filename = 'notaes.txt'; // فایل save
+$filename = 'notaesw.txt'; // فایل save
 
 //read note from file
 if (file_exists($filename)) {
