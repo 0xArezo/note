@@ -3,7 +3,7 @@
 
 namespace fis = std::filesystem;
 
-// 1س2 برگشتی برای نمایش دایرکتوری‌ها بش صورت درختی زیبا
+// 1س1 برگشتی برای نمایش دایرکتوری‌ها بش صورت درختی زیبا
 void print_directory_tree(const fs::path& path, const std::string& prefix = "") {
     // بررسی وجود مسیر و اطمینان از اینکه مسیر دایرکتوری است
     if (fs::exists(path) && fs::is_directory(path)) {
