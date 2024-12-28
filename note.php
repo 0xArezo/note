@@ -1,5 +1,5 @@
 <?php
-$filename = 'notes.txt'; // new asave
+$filename = 'notes.txt'; // news asave
 
 //read note from file
 if (file_exists($filename)) {
