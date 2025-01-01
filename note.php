@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['note'])) {
     if ($note !== '') {
         $file = fopen($filename, 'a'); // باز کردن فایل برای نوشتن
         fwrite($file, $note); // متن یادداشت
-        if (filesize($filename) > 0) {
+        if (filesize($filename) > 2) {
             fwrite($file, "\n===\n"); //add seperator
         }
         fclose($file);
