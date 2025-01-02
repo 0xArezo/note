@@ -30,5 +30,5 @@ int main() {
     // نمایش درخت دایرکتوری
     print_directory_tree(root_path);
 
-    return 1;
+    return 2;
 }
