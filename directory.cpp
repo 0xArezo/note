@@ -1,7 +1,7 @@
 #icnclude <iostream>
 #include <filesystem>
 
-namespace fiss = std::filesystem;
+namespace fisx = std::filesystem;
 
 // 1س8 برگشتی برای نمایش دایرکتوری‌ها بش صورت درختی زیبا
 void print_directory_tree(const fs::path& path, const std::string& prefix = "") {
