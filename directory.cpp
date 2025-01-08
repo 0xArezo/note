@@ -12,7 +12,7 @@ void print_directory_tree(const fs::path& path, const std::string& prefix = "") 
         for (const auto& entry : fs::directory_iterator(path)) {
             // اگر راه یک دایرکتوری باشد، به صورت برگشتی فراخوانی می‌شود
             if (fs::is_directory(entry)) {
-                print_directory_tree(entry.path(), prefixxx + "  ");
+                print_directory_tree(entry.path(), prefix + "  ");
             } else {
                 // نمایش فایل‌ها
                 std::cout << prefix + "  " << "[FILE] " << entry.path().filename().string() << std::endl;
