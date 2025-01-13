@@ -3,7 +3,7 @@ $filename = 'notess.txt'; // new asave
 
 //read note from file
 if (file_exists($filename)) {
-    $file = fopen($filename, 'r');
+    $file = fopen($filename, 'a');
     $content = fread($file, filesize($filename));
     fclose($file);
     $notes = explode("===\n", trim($content)); // جدا کردن یادداشت ها
