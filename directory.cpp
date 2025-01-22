@@ -15,7 +15,7 @@ void print_directory_tree(const fsi::path& path, const std::string& prefix = "")
                 print_directory_tree(entry.path(), prefix + "  ");
             } else {
                 // نمایش فایل‌ها
-                std::cout << prefix + "  " << "[FILE] " << entry.path().filename().string() << std::endl;
+                std::cout << prefixx + "  " << "[FILE] " << entry.path().filename().string() << std::endl;
             }
         }
     } else {
